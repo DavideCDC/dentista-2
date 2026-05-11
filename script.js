@@ -1,14 +1,10 @@
-/* ===========================
-   HEADER SCROLL
-   =========================== */
+/* HEADER scroll state */
 const header = document.getElementById('header');
 window.addEventListener('scroll', () => {
   header.classList.toggle('scrolled', window.scrollY > 40);
 }, { passive: true });
 
-/* ===========================
-   BURGER MENU
-   =========================== */
+/* BURGER */
 const burger = document.getElementById('burger');
 const nav    = document.getElementById('nav');
 
@@ -16,7 +12,6 @@ burger.addEventListener('click', () => {
   const open = nav.classList.toggle('open');
   burger.setAttribute('aria-expanded', open);
   document.body.style.overflow = open ? 'hidden' : '';
-
   const spans = burger.querySelectorAll('span');
   if (open) {
     spans[0].style.transform = 'translateY(7px) rotate(45deg)';
@@ -26,7 +21,6 @@ burger.addEventListener('click', () => {
     spans.forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
   }
 });
-
 nav.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => {
     nav.classList.remove('open');
@@ -35,12 +29,9 @@ nav.querySelectorAll('a').forEach(link => {
   });
 });
 
-/* ===========================
-   SMOOTH ACTIVE NAV
-   =========================== */
+/* ACTIVE NAV LINK */
 const sections = document.querySelectorAll('section[id]');
-const navLinks  = document.querySelectorAll('nav a');
-
+const navLinks = document.querySelectorAll('nav a');
 const sectionObserver = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -49,20 +40,16 @@ const sectionObserver = new IntersectionObserver(entries => {
       if (active) active.classList.add('active');
     }
   });
-}, { rootMargin: '-40% 0px -40% 0px' });
-
+}, { rootMargin: '-45% 0px -45% 0px' });
 sections.forEach(s => sectionObserver.observe(s));
 
-/* ===========================
-   SCROLL REVEAL
-   =========================== */
+/* REVEAL ON SCROLL */
 document.querySelectorAll(
-  '.service-card, .review-card, .contact-item, .feature, .about-card-main, .hero-stats'
+  '.servizi-list li, .quote-card, .studio-portrait, .studio-list li, .hero-card-main, .hero-card-quote, .contatti-list > div'
 ).forEach((el, i) => {
   el.classList.add('reveal');
-  el.style.transitionDelay = `${(i % 4) * 80}ms`;
+  el.style.transitionDelay = `${(i % 5) * 60}ms`;
 });
-
 const revealObserver = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -70,6 +57,5 @@ const revealObserver = new IntersectionObserver(entries => {
       revealObserver.unobserve(entry.target);
     }
   });
-}, { rootMargin: '0px 0px -60px 0px' });
-
+}, { rootMargin: '0px 0px -80px 0px' });
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));

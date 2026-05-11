@@ -7,7 +7,7 @@
   <title>Studio Dentistico Chilà Dr. Agostino – Aprilia (LT)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -15,24 +15,24 @@
   <!-- ===== HEADER ===== -->
   <header id="header">
     <div class="container header-inner">
-      <a href="#hero" class="logo">
-        <span class="logo-icon">🦷</span>
+      <a href="#top" class="logo">
+        <span class="logo-mark">C</span>
         <div class="logo-text">
-          <span class="logo-name">Studio Chilà</span>
-          <span class="logo-sub">Dr. Agostino · Aprilia (LT)</span>
+          <span class="logo-name">Chilà</span>
+          <span class="logo-sub">Studio Dentistico · Aprilia</span>
         </div>
       </a>
       <nav id="nav">
         <ul>
+          <li><a href="#studio">Lo Studio</a></li>
           <li><a href="#servizi">Servizi</a></li>
-          <li><a href="#chi-siamo">Chi Siamo</a></li>
-          <li><a href="#recensioni">Recensioni</a></li>
+          <li><a href="#pazienti">Pazienti</a></li>
           <li><a href="#contatti">Contatti</a></li>
         </ul>
       </nav>
-      <a href="tel:0692707910" class="btn btn-primary header-cta">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
-        06 9270 7910
+      <a href="tel:0692707910" class="header-phone">
+        <span class="header-phone-label">Telefono</span>
+        <span class="header-phone-num">06 9270 7910</span>
       </a>
       <button class="burger" id="burger" aria-label="Menu">
         <span></span><span></span><span></span>
@@ -41,320 +41,299 @@
   </header>
 
   <!-- ===== HERO ===== -->
-  <section id="hero">
-    <div class="hero-bg"></div>
-    <div class="container hero-content">
-      <p class="hero-eyebrow">Studio Dentistico ad Aprilia (LT)</p>
-      <h1>Cure odontoiatriche<br><em>con onestà e competenza</em></h1>
-      <p class="hero-subtitle">Lo Studio Dentistico del Dr. Agostino Chilà è un punto di riferimento per chi cerca trattamenti odontoiatrici di qualità, con un approccio professionale, scrupoloso e prezzi onesti.</p>
-      <div class="hero-actions">
-        <a href="tel:0692707910" class="btn btn-primary btn-lg">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
-          Prenota una Visita
-        </a>
-        <a href="#servizi" class="btn btn-outline btn-lg">Scopri i Servizi</a>
+  <section id="top" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <span class="hero-pill">Dr. Agostino Chilà · Odontoiatra</span>
+        <h1>Cure dentali con <em>onestà</em>, professionalità e attenzione.</h1>
+        <p class="hero-lead">Lo Studio Dentistico del Dr. Agostino Chilà ad Aprilia è un punto di riferimento per chi cerca trattamenti odontoiatrici personalizzati, eseguiti con scrupolosità e prezzi trasparenti.</p>
+        <div class="hero-actions">
+          <a href="tel:0692707910" class="btn btn-dark">Prenota una visita →</a>
+          <a href="#studio" class="btn-text">Scopri lo studio</a>
+        </div>
+        <div class="hero-meta">
+          <div>
+            <strong>5,0</strong>
+            <span>★★★★★ · 8 recensioni Google</span>
+          </div>
+          <div>
+            <strong>Lun – Sab</strong>
+            <span>Su appuntamento</span>
+          </div>
+        </div>
       </div>
-      <div class="hero-stats">
-        <div class="stat">
-          <span class="stat-num">5,0★</span>
-          <span class="stat-label">Google Reviews</span>
+
+      <div class="hero-visual">
+        <div class="hero-card-main">
+          <div class="hero-card-tag">Aprilia (LT)</div>
+          <div class="hero-card-emoji">🦷</div>
+          <div class="hero-card-info">
+            <p class="hero-card-name">Dr. Agostino Chilà</p>
+            <p class="hero-card-role">Medico Chirurgo Odontoiatra</p>
+          </div>
         </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-num">8</span>
-          <span class="stat-label">Recensioni a 5 stelle</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-num">€</span>
-          <span class="stat-label">Prezzi onesti</span>
+        <div class="hero-card-quote">
+          <p>"Poche parole, molta sostanza."</p>
+          <span>— Massimiliano P. · Google</span>
         </div>
       </div>
     </div>
-    <div class="hero-wave">
-      <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#ffffff"/>
-      </svg>
+  </section>
+
+  <!-- ===== MARQUEE FASCIA VALORI ===== -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>Onestà</span><span class="marquee-dot">●</span>
+      <span>Professionalità</span><span class="marquee-dot">●</span>
+      <span>Scrupolosità</span><span class="marquee-dot">●</span>
+      <span>Competenza</span><span class="marquee-dot">●</span>
+      <span>Trasparenza</span><span class="marquee-dot">●</span>
+      <span>Cura del paziente</span><span class="marquee-dot">●</span>
+      <span>Onestà</span><span class="marquee-dot">●</span>
+      <span>Professionalità</span><span class="marquee-dot">●</span>
+      <span>Scrupolosità</span><span class="marquee-dot">●</span>
+      <span>Competenza</span><span class="marquee-dot">●</span>
+      <span>Trasparenza</span><span class="marquee-dot">●</span>
+      <span>Cura del paziente</span><span class="marquee-dot">●</span>
+    </div>
+  </div>
+
+  <!-- ===== LO STUDIO ===== -->
+  <section id="studio" class="studio">
+    <div class="container studio-grid">
+      <div class="studio-side">
+        <p class="eyebrow">— Lo Studio</p>
+        <div class="studio-portrait">
+          <span class="studio-portrait-emoji">👨‍⚕️</span>
+          <div class="studio-portrait-info">
+            <strong>Dr. Agostino Chilà</strong>
+            <span>Medico Chirurgo Odontoiatra</span>
+          </div>
+        </div>
+        <ul class="studio-list">
+          <li><span>01</span> Professionista serio e scrupoloso</li>
+          <li><span>02</span> Attrezzature moderne</li>
+          <li><span>03</span> Ambiente accogliente e sicuro</li>
+          <li><span>4</span> Trattamenti personalizzati</li>
+          <li><span>05</span> Preventivi chiari e onesti</li>
+          <li><span>06</span> Aperto anche il sabato mattina</li>
+        </ul>
+      </div>
+      <div class="studio-main">
+        <h2>Un punto di riferimento <em>per la salute della tua bocca</em> ad Aprilia.</h2>
+        <p class="studio-lead">Lo Studio Dentistico del Dr. Agostino Chilà si trova in Via Giuseppe Giusti 8, ad Aprilia (LT). Da anni rappresenta un riferimento per chi cerca cure odontoiatriche di qualità nel territorio, con un approccio personale, scrupoloso e attento alle esigenze di ogni paziente.</p>
+        <p>Il Dr. Chilà è apprezzato per la sua <strong>professionalità, onestà e competenza</strong>. Le recensioni dei pazienti parlano di un professionista serio, attento ai dettagli, capace di proporre trattamenti efficaci con prezzi onesti e preventivi trasparenti.</p>
+        <p>Lo studio è dotato di <strong>attrezzature moderne</strong> e offre un ambiente accogliente. La dedizione del Dr. Chilà e del suo team garantisce a ogni paziente un'esperienza positiva, dal primo appuntamento al trattamento finale.</p>
+        <div class="studio-sign">
+          <span class="studio-sign-line"></span>
+          <p>Aprilia (LT) — Via Giuseppe Giusti, 8</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- ===== SERVIZI ===== -->
-  <section id="servizi">
+  <section id="servizi" class="servizi">
     <div class="container">
-      <div class="section-header">
-        <p class="section-eyebrow">Le nostre prestazioni</p>
-        <h2>Servizi Odontoiatrici</h2>
-        <p class="section-subtitle">Cure complete e personalizzate per la salute della tua bocca, con strumentazione moderna e attenzione al singolo paziente.</p>
+      <div class="servizi-header">
+        <p class="eyebrow">— Servizi</p>
+        <h2>Cosa offriamo<br><em>in studio</em></h2>
+        <p class="servizi-intro">Una gamma completa di prestazioni odontoiatriche, eseguite con metodo e cura. Ogni trattamento parte da una diagnosi accurata e da un preventivo chiaro.</p>
       </div>
-      <div class="services-grid">
 
-        <div class="service-card">
-          <div class="service-icon">🦷</div>
-          <h3>Implantologia</h3>
-          <p>Sostituzione dei denti mancanti con impianti dentali di qualità, per ripristinare estetica e funzionalità masticatoria con risultati duraturi.</p>
-        </div>
-
-        <div class="service-card featured">
-          <div class="service-badge">Punto di forza</div>
-          <div class="service-icon">🤝</div>
-          <h3>Cura del Paziente</h3>
-          <p>Approccio personalizzato, diagnosi accurata e trattamenti su misura. Onestà, trasparenza nei preventivi e cura scrupolosa di ogni dettaglio.</p>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">⚡</div>
-          <h3>Endodonzia</h3>
-          <p>Devitalizzazioni e trattamenti canalari eseguiti con tecniche moderne per salvare il dente naturale ed eliminare il dolore.</p>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">😁</div>
-          <h3>Ortodonzia</h3>
-          <p>Correzione delle malocclusioni e dell'allineamento dentale per adulti e bambini, con apparecchi tradizionali o trasparenti.</p>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">✨</div>
-          <h3>Estetica Dentale</h3>
-          <p>Sbiancamenti professionali, faccette estetiche e restauri in composito per un sorriso luminoso e naturale.</p>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">🔬</div>
-          <h3>Conservativa</h3>
-          <p>Otturazioni estetiche con materiali compositi di alta qualità per ripristinare denti danneggiati o cariati.</p>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">💧</div>
-          <h3>Igiene e Prevenzione</h3>
-          <p>Sedute di igiene professionale, rimozione di tartaro e placca, controlli periodici per mantenere la bocca in salute nel tempo.</p>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">🪥</div>
-          <h3>Protesi Dentale</h3>
-          <p>Protesi fisse e mobili realizzate su misura per restituire comfort, estetica e funzionalità nella masticazione.</p>
-        </div>
-
-      </div>
+      <ol class="servizi-list">
+        <li>
+          <div class="srv-num">01</div>
+          <div class="srv-body">
+            <h3>Implantologia</h3>
+            <p>Sostituzione dei denti mancanti con impianti dentali di qualità, per estetica e funzionalità masticatoria durature.</p>
+          </div>
+          <div class="srv-tag">Riabilitativa</div>
+        </li>
+        <li>
+          <div class="srv-num">02</div>
+          <div class="srv-body">
+            <h3>Endodonzia</h3>
+            <p>Devitalizzazioni e trattamenti canalari per salvare il dente naturale ed eliminare il dolore.</p>
+          </div>
+          <div class="srv-tag">Conservativa</div>
+        </li>
+        <li>
+          <div class="srv-num">03</div>
+          <div class="srv-body">
+            <h3>Ortodonzia</h3>
+            <p>Correzione di malocclusioni e allineamento dentale per adulti e bambini, con apparecchi tradizionali o trasparenti.</p>
+          </div>
+          <div class="srv-tag">Adulti & bambini</div>
+        </li>
+        <li>
+          <div class="srv-num">04</div>
+          <div class="srv-body">
+            <h3>Estetica dentale</h3>
+            <p>Sbiancamenti professionali, faccette e restauri estetici per un sorriso luminoso e naturale.</p>
+          </div>
+          <div class="srv-tag">Estetica</div>
+        </li>
+        <li>
+          <div class="srv-num">05</div>
+          <div class="srv-body">
+            <h3>Conservativa</h3>
+            <p>Otturazioni estetiche con materiali compositi di alta qualità per ripristinare denti danneggiati o cariati.</p>
+          </div>
+          <div class="srv-tag">Quotidiana</div>
+        </li>
+        <li>
+          <div class="srv-num">06</div>
+          <div class="srv-body">
+            <h3>Igiene e prevenzione</h3>
+            <p>Sedute di igiene professionale, controlli periodici e rimozione di tartaro e placca.</p>
+          </div>
+          <div class="srv-tag">Prevenzione</div>
+        </li>
+        <li>
+          <div class="srv-num">07</div>
+          <div class="srv-body">
+            <h3>Protesi dentale</h3>
+            <p>Protesi fisse e mobili su misura per restituire comfort, estetica e masticazione efficace.</p>
+          </div>
+          <div class="srv-tag">Riabilitativa</div>
+        </li>
+        <li>
+          <div class="srv-num">08</div>
+          <div class="srv-body">
+            <h3>Diagnosi & preventivi</h3>
+            <p>Visita di valutazione iniziale, diagnosi accurata e preventivo trasparente, senza sorprese.</p>
+          </div>
+          <div class="srv-tag">Prima visita</div>
+        </li>
+      </ol>
     </div>
   </section>
 
-  <!-- ===== CHI SIAMO ===== -->
-  <section id="chi-siamo">
-    <div class="container about-grid">
-      <div class="about-visual">
-        <div class="about-card-main">
-          <div class="about-icon-big">👨‍⚕️</div>
-          <p class="about-card-name">Dr. Agostino Chilà</p>
-          <p class="about-card-title">Medico Chirurgo Odontoiatra</p>
-          <div class="about-card-rating">
-            <span>⭐⭐⭐⭐⭐</span>
-            <span>5,0 / 5 su Google</span>
-          </div>
-        </div>
-        <div class="about-badge-1">
-          <span>🏆</span>
-          <span>Recensioni<br>verificate 5★</span>
-        </div>
-        <div class="about-badge-2">
-          <span>📅</span>
-          <span>Aperto<br>anche il sabato</span>
-        </div>
-      </div>
-      <div class="about-content">
-        <p class="section-eyebrow">Chi siamo</p>
-        <h2>Professionalità,<br>Onestà e Competenza</h2>
-        <p class="about-lead">Lo Studio Dentistico del Dr. Agostino Chilà si trova ad Aprilia (LT), in Via Giuseppe Giusti, 8, ed è un punto di riferimento per chi cerca cure odontoiatriche di qualità nel territorio.</p>
-        <p>Il Dr. Chilà è apprezzato dai pazienti per la sua <strong>professionalità, onestà e competenza</strong>, garantendo trattamenti personalizzati e accurati. Lo studio si distingue per l'eccellenza dei servizi offerti e l'attenzione costante alle esigenze di ogni paziente.</p>
-        <p>Dotato di <strong>attrezzature moderne</strong>, lo studio offre un ambiente accogliente e sicuro. La dedizione del Dr. Chilà e del suo team assicura un'esperienza positiva e soddisfacente per chiunque si affidi alle loro cure.</p>
-        <div class="about-features">
-          <div class="feature">
-            <span class="feature-icon">✅</span>
-            <span>Professionista serio e scrupoloso</span>
-          </div>
-          <div class="feature">
-            <span class="feature-icon">✅</span>
-            <span>Attrezzature moderne</span>
-          </div>
-          <div class="feature">
-            <span class="feature-icon">✅</span>
-            <span>Ambiente accogliente e sicuro</span>
-          </div>
-          <div class="feature">
-            <span class="feature-icon">✅</span>
-            <span>Trattamenti personalizzati</span>
-          </div>
-          <div class="feature">
-            <span class="feature-icon">✅</span>
-            <span>Preventivi chiari e onesti</span>
-          </div>
-          <div class="feature">
-            <span class="feature-icon">✅</span>
-            <span>Orario flessibile, anche il sabato</span>
-          </div>
-        </div>
-        <a href="tel:0692707910" class="btn btn-primary">Prenota una visita</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== RECENSIONI ===== -->
-  <section id="recensioni">
+  <!-- ===== PAZIENTI / RECENSIONI ===== -->
+  <section id="pazienti" class="pazienti">
     <div class="container">
-      <div class="section-header">
-        <p class="section-eyebrow">Cosa dicono i pazienti</p>
-        <h2>Recensioni Google</h2>
-        <div class="reviews-summary">
-          <span class="reviews-score">5,0</span>
+      <div class="pazienti-header">
+        <p class="eyebrow eyebrow-light">— Pazienti</p>
+        <h2>Le parole<br><em>di chi ci ha scelto.</em></h2>
+        <div class="pazienti-score">
+          <span class="score-num">5,0</span>
           <div>
-            <div class="stars">⭐⭐⭐⭐⭐</div>
-            <span class="reviews-count">Basato su 8 recensioni Google</span>
+            <div class="score-stars">★★★★★</div>
+            <span class="score-label">8 recensioni Google verificate</span>
           </div>
         </div>
       </div>
-      <div class="reviews-grid">
 
-        <div class="review-card">
-          <div class="review-header">
-            <div class="reviewer-avatar">O</div>
-            <div>
-              <p class="reviewer-name">Omar De Filippis</p>
-              <p class="reviewer-date">1 anno fa · Google</p>
-            </div>
-            <div class="review-stars">⭐⭐⭐⭐⭐</div>
-          </div>
-          <p class="review-text">"Davvero bravo! Ma soprattutto molto onesto, professionale e con ottimi prezzi. Lo consiglio vivamente."</p>
-        </div>
+      <div class="pazienti-grid">
+        <article class="quote-card">
+          <div class="quote-mark">"</div>
+          <p class="quote-text">Davvero bravo! Ma soprattutto molto <strong>onesto, professionale e con ottimi prezzi</strong>. Lo consiglio vivamente.</p>
+          <footer>
+            <span class="quote-name">Omar De Filippis</span>
+            <span class="quote-meta">★★★★★ · 1 anno fa · Google</span>
+          </footer>
+        </article>
 
-        <div class="review-card">
-          <div class="review-header">
-            <div class="reviewer-avatar">M</div>
-            <div>
-              <p class="reviewer-name">Massimiliano P.</p>
-              <p class="reviewer-date">10 mesi fa · Google</p>
-            </div>
-            <div class="review-stars">⭐⭐⭐⭐⭐</div>
-          </div>
-          <p class="review-text">"Un vero professionista. Poche parole molta sostanza."</p>
-        </div>
+        <article class="quote-card quote-card-accent">
+          <div class="quote-mark">"</div>
+          <p class="quote-text">Un vero professionista. <strong>Poche parole, molta sostanza.</strong></p>
+          <footer>
+            <span class="quote-name">Massimiliano P.</span>
+            <span class="quote-meta">★★★★★ · 10 mesi fa · Google</span>
+          </footer>
+        </article>
 
-        <div class="review-card">
-          <div class="review-header">
-            <div class="reviewer-avatar">A</div>
-            <div>
-              <p class="reviewer-name">Alfredo Marino</p>
-              <p class="reviewer-date">3 anni fa · Google</p>
-            </div>
-            <div class="review-stars">⭐⭐⭐⭐⭐</div>
-          </div>
-          <p class="review-text">"Professionista serio, scrupoloso, competente e onesto. Lo consiglio vivamente."</p>
-        </div>
-
+        <article class="quote-card">
+          <div class="quote-mark">"</div>
+          <p class="quote-text">Professionista <strong>serio, scrupoloso, competente e onesto.</strong> Lo consiglio vivamente.</p>
+          <footer>
+            <span class="quote-name">Alfredo Marino</span>
+            <span class="quote-meta">★★★★★ · 3 anni fa · Google</span>
+          </footer>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- ===== ORARI + CONTATTI ===== -->
-  <section id="contatti">
-    <div class="container contact-grid">
+  <!-- ===== CONTATTI ===== -->
+  <section id="contatti" class="contatti">
+    <div class="container contatti-grid">
+      <div class="contatti-info">
+        <p class="eyebrow">— Contatti</p>
+        <h2>Vieni a trovarci<br><em>in studio.</em></h2>
+        <p class="contatti-lead">Riceviamo i pazienti previo appuntamento. Per una prima visita o un preventivo, chiamaci ai recapiti qui sotto.</p>
 
-      <div class="contact-info">
-        <p class="section-eyebrow">Vieni a trovarci</p>
-        <h2>Contatti e Orari</h2>
+        <dl class="contatti-list">
+          <div>
+            <dt>Indirizzo</dt>
+            <dd>Via Giuseppe Giusti, 8<br>04011 Aprilia (LT)</dd>
+          </div>
+          <div>
+            <dt>Telefono</dt>
+            <dd><a href="tel:0692707910">06 9270 7910</a></dd>
+          </div>
+          <div>
+            <dt>Orari</dt>
+            <dd>
+              <table class="hours">
+                <tr><th>Lunedì</th><td>08:30 – 19:00</td></tr>
+                <tr><th>Martedì</th><td>08:30 – 19:00</td></tr>
+                <tr class="closed"><th>Mercoledì</th><td>Chiuso</td></tr>
+                <tr><th>Giovedì</th><td>08:30 – 19:00</td></tr>
+                <tr class="closed"><th>Venerdì</th><td>Chiuso</td></tr>
+                <tr><th>Sabato</th><td>08:30 – 13:00</td></tr>
+                <tr class="closed"><th>Domenica</th><td>Chiuso</td></tr>
+              </table>
+            </dd>
+          </div>
+        </dl>
 
-        <div class="contact-items">
-          <div class="contact-item">
-            <span class="contact-icon">📍</span>
-            <div>
-              <strong>Indirizzo</strong>
-              <p>Via Giuseppe Giusti, 8<br>04011 Aprilia (LT)</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <span class="contact-icon">📞</span>
-            <div>
-              <strong>Telefono</strong>
-              <p><a href="tel:0692707910">06 9270 7910</a></p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <span class="contact-icon">🕐</span>
-            <div>
-              <strong>Orari di apertura</strong>
-              <div class="hours-table">
-                <div class="hours-row"><span>Lunedì</span><span>08:30 – 19:00</span></div>
-                <div class="hours-row"><span>Martedì</span><span>08:30 – 19:00</span></div>
-                <div class="hours-row hours-closed"><span>Mercoledì</span><span>Chiuso</span></div>
-                <div class="hours-row"><span>Giovedì</span><span>08:30 – 19:00</span></div>
-                <div class="hours-row hours-closed"><span>Venerdì</span><span>Chiuso</span></div>
-                <div class="hours-row"><span>Sabato</span><span>08:30 – 13:00</span></div>
-                <div class="hours-row hours-closed"><span>Domenica</span><span>Chiuso</span></div>
-              </div>
-            </div>
-          </div>
-          <div class="contact-item">
-            <span class="contact-icon">📅</span>
-            <div>
-              <strong>Su appuntamento</strong>
-              <p>Per garantirti la massima attenzione, riceviamo i pazienti previo appuntamento telefonico.</p>
-            </div>
-          </div>
-        </div>
-
-        <a href="tel:0692707910" class="btn btn-primary btn-lg">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
-          Chiama Ora
-        </a>
+        <a href="tel:0692707910" class="btn btn-dark btn-large">Chiama lo studio →</a>
       </div>
 
-      <div class="contact-map">
+      <div class="contatti-map">
         <iframe
           src="https://www.google.com/maps?q=Via+Giuseppe+Giusti+8+Aprilia+LT&output=embed"
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
-          title="Mappa Studio Dentistico Chilà Aprilia">
-        </iframe>
+          title="Mappa Studio Dentistico Chilà Aprilia"></iframe>
         <a href="https://www.google.com/maps/search/Studio+Dentistico+Chil%C3%A0+Via+Giuseppe+Giusti+8+Aprilia" target="_blank" rel="noopener" class="map-link">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          Apri su Google Maps
+          Apri su Google Maps ↗
         </a>
       </div>
-
-    </div>
-  </section>
-
-  <!-- ===== CTA FINALE ===== -->
-  <section id="cta-final">
-    <div class="container cta-content">
-      <h2>Il tuo sorriso merita le cure migliori</h2>
-      <p>Contatta lo studio per fissare la tua visita. Saremo felici di accoglierti.</p>
-      <a href="tel:0692707910" class="btn btn-white btn-lg">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
-        06 9270 7910
-      </a>
     </div>
   </section>
 
   <!-- ===== FOOTER ===== -->
-  <footer id="footer">
-    <div class="container footer-inner">
+  <footer class="site-footer">
+    <div class="container footer-grid">
       <div class="footer-brand">
-        <span class="logo-icon">🦷</span>
-        <div>
-          <p class="footer-name">Studio Dentistico Chilà</p>
-          <p class="footer-tagline">Dr. Agostino · Aprilia (LT)</p>
-        </div>
+        <span class="logo-mark logo-mark-light">C</span>
+        <p class="footer-name">Studio Dentistico Chilà</p>
+        <p class="footer-role">Dr. Agostino · Medico Chirurgo Odontoiatra</p>
       </div>
-      <div class="footer-links">
-        <a href="#servizi">Servizi</a>
-        <a href="#chi-siamo">Chi Siamo</a>
-        <a href="#recensioni">Recensioni</a>
-        <a href="#contatti">Contatti</a>
+      <div class="footer-col">
+        <p class="footer-h">Studio</p>
+        <p>Via Giuseppe Giusti, 8<br>04011 Aprilia (LT)</p>
       </div>
-      <p class="footer-copy">© 2026 Studio Dentistico Chilà Dr. Agostino · Via Giuseppe Giusti 8, 04011 Aprilia (LT) · Tel. 06 9270 7910</p>
+      <div class="footer-col">
+        <p class="footer-h">Contatti</p>
+        <p><a href="tel:0692707910">06 9270 7910</a></p>
+      </div>
+      <div class="footer-col">
+        <p class="footer-h">Naviga</p>
+        <p>
+          <a href="#studio">Lo Studio</a><br>
+          <a href="#servizi">Servizi</a><br>
+          <a href="#pazienti">Pazienti</a><br>
+          <a href="#contatti">Contatti</a>
+        </p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Studio Dentistico Chilà Dr. Agostino — Aprilia (LT)</p>
     </div>
   </footer>
 
